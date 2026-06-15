@@ -34,6 +34,19 @@
           </div>
         </div>
 
+        <div class="lesson-card">
+          <div>
+            <p id="stageLabel" class="eyebrow">Etape 1</p>
+            <h2 id="stageTitle">Depart</h2>
+          </div>
+          <div class="goal">
+            <span id="stageGoal">Objectif : terminer le texte</span>
+            <div class="progress-track" aria-hidden="true">
+              <span id="stageProgress"></span>
+            </div>
+          </div>
+        </div>
+
         <div id="quote" class="quote" aria-label="Texte a recopier"></div>
 
         <textarea
@@ -46,30 +59,20 @@
         ></textarea>
 
         <div class="controls">
-          <label>
-            Niveau
-            <select id="levelSelect">
-              <option value="easy">Facile</option>
-              <option value="medium">Moyen</option>
-              <option value="hard">Difficile</option>
-            </select>
-          </label>
+          <button id="previousStageBtn" type="button" aria-label="Etape precedente">&lt;</button>
           <button id="newTextBtn" type="button">Nouveau texte</button>
+          <button id="nextStageBtn" type="button" aria-label="Etape suivante">&gt;</button>
         </div>
       </section>
 
-      <aside class="keyboard" aria-label="Clavier visuel">
+      <aside class="path-panel" aria-label="Chemin de progression">
         <div class="keyboard__glow"></div>
-        <div class="row">
-          <span>A</span><span>Z</span><span>E</span><span>R</span><span>T</span><span>Y</span><span>U</span><span>I</span><span>O</span><span>P</span>
+        <div class="path-head">
+          <p class="eyebrow">Parcours</p>
+          <h2>Route dactilo</h2>
+          <small id="overallProgress">0 / 8 niveaux termines</small>
         </div>
-        <div class="row row--offset">
-          <span>Q</span><span>S</span><span>D</span><span>F</span><span>G</span><span>H</span><span>J</span><span>K</span><span>L</span><span>M</span>
-        </div>
-        <div class="row row--offset-more">
-          <span>W</span><span>X</span><span>C</span><span>V</span><span>B</span><span>N</span>
-        </div>
-        <div class="spacebar"></div>
+        <div id="pathMap" class="path-map"></div>
       </aside>
     </main>
 
