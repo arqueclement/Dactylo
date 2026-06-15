@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" role="img" aria-label="Motif clavier">
+  <rect width="700" height="520" fill="#dbe7e1"/>
+  <path d="M90 120h520a44 44 0 0 1 44 44v216a44 44 0 0 1-44 44H90a44 44 0 0 1-44-44V164a44 44 0 0 1 44-44Z" fill="#f9fbf8" stroke="#9fb5ab" stroke-width="8"/>
+  <g fill="#c84b31" opacity=".18">
+    <circle cx="120" cy="96" r="46"/>
+    <circle cx="612" cy="430" r="64"/>
+  </g>
+  <g fill="#1f8a70" opacity=".2">
+    <rect x="126" y="174" width="66" height="50" rx="10"/>
+    <rect x="202" y="174" width="66" height="50" rx="10"/>
+    <rect x="278" y="174" width="66" height="50" rx="10"/>
+    <rect x="354" y="174" width="66" height="50" rx="10"/>
+    <rect x="430" y="174" width="66" height="50" rx="10"/>
+    <rect x="506" y="174" width="66" height="50" rx="10"/>
+    <rect x="158" y="246" width="66" height="50" rx="10"/>
+    <rect x="234" y="246" width="66" height="50" rx="10"/>
+    <rect x="310" y="246" width="66" height="50" rx="10"/>
+    <rect x="386" y="246" width="66" height="50" rx="10"/>
+    <rect x="462" y="246" width="66" height="50" rx="10"/>
+    <rect x="220" y="318" width="260" height="50" rx="12"/>
+  </g>
+</svg>

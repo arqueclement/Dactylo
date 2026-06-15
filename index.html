@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dactilo Pracsi</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="practice">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Entrainement clavier</p>
+            <h1>Dactilo Pracsi</h1>
+          </div>
+          <button id="resetBtn" class="icon-btn" type="button" title="Recommencer" aria-label="Recommencer">
+            &#8635;
+          </button>
+        </div>
+
+        <div class="stats" aria-label="Statistiques">
+          <div>
+            <span id="wpm">0</span>
+            <small>mots/min</small>
+          </div>
+          <div>
+            <span id="accuracy">100%</span>
+            <small>precision</small>
+          </div>
+          <div>
+            <span id="timer">60</span>
+            <small>secondes</small>
+          </div>
+        </div>
+
+        <div id="quote" class="quote" aria-label="Texte a recopier"></div>
+
+        <textarea
+          id="typingInput"
+          spellcheck="false"
+          autocomplete="off"
+          autocapitalize="off"
+          placeholder="Tape le texte ici pour commencer..."
+          aria-label="Zone de saisie"
+        ></textarea>
+
+        <div class="controls">
+          <label>
+            Niveau
+            <select id="levelSelect">
+              <option value="easy">Facile</option>
+              <option value="medium">Moyen</option>
+              <option value="hard">Difficile</option>
+            </select>
+          </label>
+          <button id="newTextBtn" type="button">Nouveau texte</button>
+        </div>
+      </section>
+
+      <aside class="keyboard" aria-label="Clavier visuel">
+        <div class="keyboard__glow"></div>
+        <div class="row">
+          <span>A</span><span>Z</span><span>E</span><span>R</span><span>T</span><span>Y</span><span>U</span><span>I</span><span>O</span><span>P</span>
+        </div>
+        <div class="row row--offset">
+          <span>Q</span><span>S</span><span>D</span><span>F</span><span>G</span><span>H</span><span>J</span><span>K</span><span>L</span><span>M</span>
+        </div>
+        <div class="row row--offset-more">
+          <span>W</span><span>X</span><span>C</span><span>V</span><span>B</span><span>N</span>
+        </div>
+        <div class="spacebar"></div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
