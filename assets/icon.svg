@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Dactilo Pracsi">
+  <rect width="512" height="512" rx="112" fill="#1f8a70"/>
+  <rect x="82" y="148" width="348" height="216" rx="34" fill="#f7f3ea"/>
+  <g fill="#253238">
+    <rect x="124" y="188" width="44" height="38" rx="8"/>
+    <rect x="184" y="188" width="44" height="38" rx="8"/>
+    <rect x="244" y="188" width="44" height="38" rx="8"/>
+    <rect x="304" y="188" width="44" height="38" rx="8"/>
+    <rect x="144" y="244" width="44" height="38" rx="8"/>
+    <rect x="204" y="244" width="44" height="38" rx="8"/>
+    <rect x="264" y="244" width="44" height="38" rx="8"/>
+    <rect x="324" y="244" width="44" height="38" rx="8"/>
+    <rect x="168" y="304" width="176" height="34" rx="12"/>
+  </g>
+  <path d="M118 402h276" fill="none" stroke="#f7f3ea" stroke-width="28" stroke-linecap="round"/>
+</svg>

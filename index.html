@@ -3,20 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1f8a70">
     <title>Dactilo Pracsi</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="app">
+    <section id="loginScreen" class="login-screen" aria-label="Connexion">
+      <form id="loginForm" class="login-card">
+        <p class="eyebrow">Connexion</p>
+        <h1>Dactilo Pracsi</h1>
+        <label>
+          Identifiant
+          <input id="loginId" type="text" autocomplete="username" required>
+        </label>
+        <label>
+          Code
+          <input id="loginCode" type="password" inputmode="numeric" autocomplete="current-password" required>
+        </label>
+        <p id="loginError" class="login-error" role="alert" hidden>Identifiant ou code incorrect.</p>
+        <button type="submit">Se connecter</button>
+      </form>
+    </section>
+
+    <main id="appScreen" class="app" hidden>
       <section class="practice">
         <div class="topbar">
           <div>
             <p class="eyebrow">Entrainement clavier</p>
             <h1>Dactilo Pracsi</h1>
           </div>
-          <button id="resetBtn" class="icon-btn" type="button" title="Recommencer" aria-label="Recommencer">
-            &#8635;
-          </button>
+          <div class="top-actions">
+            <span id="userBadge" class="user-badge">Eleve</span>
+            <button id="logoutBtn" class="icon-btn" type="button" title="Deconnexion" aria-label="Deconnexion">
+              X
+            </button>
+            <button id="resetBtn" class="icon-btn" type="button" title="Recommencer" aria-label="Recommencer">
+              &#8635;
+            </button>
+          </div>
         </div>
 
         <div class="stats" aria-label="Statistiques">
@@ -70,7 +97,7 @@
         <div class="path-head">
           <p class="eyebrow">Parcours</p>
           <h2>Route dactilo</h2>
-          <small id="overallProgress">0 / 8 niveaux termines</small>
+          <small id="overallProgress">0 / 42 niveaux termines</small>
         </div>
         <div id="pathMap" class="path-map"></div>
       </aside>
